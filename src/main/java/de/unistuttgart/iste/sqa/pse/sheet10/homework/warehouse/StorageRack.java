@@ -63,7 +63,7 @@ public final class StorageRack {
 
 	/**
 	 * Get the capacity of this warehouse.
-	 * 
+	 *
 	 * @return The capacity of this warehouse.
 	 */
 	public int getCapacity() {
@@ -72,7 +72,7 @@ public final class StorageRack {
 
 	/**
 	 * Get the number of items in this warehouse.
-	 * 
+	 *
 	 * @return The number of items in this warehouse.
 	 */
 	public int getNumberOfItems() {

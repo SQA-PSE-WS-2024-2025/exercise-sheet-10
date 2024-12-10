@@ -11,7 +11,7 @@ public final class Customer {
 
 	/**
 	 * Creates a new customer with the given name.
-	 * 
+	 *
 	 * @param name Name of the customer. Must not be null or blank.
 	 * @throws IllegalArgumentException If the preconditions are not satisfied.
 	 */
@@ -24,7 +24,7 @@ public final class Customer {
 
 	/**
 	 * Get the customer's name.
-	 * 
+	 *
 	 * @return This customer's name.
 	 */
 	public String getName() {

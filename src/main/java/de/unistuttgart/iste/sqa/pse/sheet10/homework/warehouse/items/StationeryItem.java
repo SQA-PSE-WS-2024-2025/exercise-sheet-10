@@ -11,13 +11,12 @@ public abstract class StationeryItem {
 	private final Identifier identifier;
 	private final String descriptor;
 
-
 	/**
 	 * Creates a new item with the given identification.
-	 * 
+	 *
 	 * @param identifier Identification of the item. Must not be null.
 	 * @param descriptor Descriptor of the item. Must not be null.
-	 * 
+	 *
 	 * @throws IllegalArgumentException if any of identifier or descriptor is null.
 	 */
 	public StationeryItem(final Identifier identifier, final String descriptor) {
@@ -30,7 +29,7 @@ public abstract class StationeryItem {
 
 	/**
 	 * Get the identification object of this item.
-	 * 
+	 *
 	 * @return The identification object of this item.
 	 */
 	public Identifier getIdentifier() {

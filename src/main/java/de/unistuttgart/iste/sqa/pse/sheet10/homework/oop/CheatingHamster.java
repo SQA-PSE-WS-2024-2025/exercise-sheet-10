@@ -8,11 +8,11 @@ import de.hamstersimulator.objectsfirst.external.model.Territory;
 /**
  * An especially eager Hamster.
  */
-public class CheatingHamster extends Hamster {	
-	
+public class CheatingHamster extends Hamster {
+
 	/**
-	 * Create a new instance of {@link CheatingHamster}. 
-	 * 
+	 * Create a new instance of {@link CheatingHamster}.
+	 *
 	 * @param territory territory to create the new hamster on. Must not be {@code null}.
 	 * @param location location to create the new hamster at. Must not be {@code null}. Must be on the territory and must not be blocked by a wall.
 	 * @param direction direction the new hamster looks into. Must not be {@code null}.
