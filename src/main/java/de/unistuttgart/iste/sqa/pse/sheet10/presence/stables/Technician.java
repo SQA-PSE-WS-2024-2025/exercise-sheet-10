@@ -15,6 +15,14 @@ public class Technician {
 
 	private final Set<Stable> cages;
 
+	/**
+	 * Creates a new technician.
+	 * @param id the id of the technician
+	 * @param firstName the first name of the technician
+	 * @param lastName the last name of the technician
+	 * @param phone the phone number of the technician
+	 * @param stables the stables the technician is responsible for
+	 */
 	public Technician(
 			final int id,
 			final String firstName,
@@ -29,12 +37,22 @@ public class Technician {
 		this.cages = stables;
 	}
 
+	/**
+	 * Requests maintenance for a stable.
+	 * @param stable the stable for which maintenance is requested
+	 */
 	protected void maintenanceRequest(final Stable stable) {}
 
+	/**
+	 * @return the phone number of the technician
+	 */
 	public String getPhone() {
 		return phone;
 	}
 
+	/**
+	 * @return the stables the technician is responsible for
+	 */
 	public Set<Stable> getStables() {
 		return cages;
 	}

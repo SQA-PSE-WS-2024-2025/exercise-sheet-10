@@ -15,6 +15,14 @@ public class Ventilator {
 	private final Date purchaseDate;
 	private final int height;
 
+	/**
+	 * Creates a new ventilator.
+	 * @param id the id of the ventilator
+	 * @param width the width of the ventilator
+	 * @param height the height of the ventilator
+	 * @param on true if the ventilator is on, false otherwise
+	 * @param purchaseDate the purchase date of the ventilator
+	 */
 	public Ventilator(final int id, final int width, final int height, final boolean on, final Date purchaseDate) {
 		super();
 		this.id = id;
@@ -24,22 +32,39 @@ public class Ventilator {
 		this.purchaseDate = purchaseDate;
 	}
 
+	/**
+	 * Turns the ventilator on.
+	 * Ensures that the ventilator is turned on.
+	 */
 	void turnOn() {
 		this.on = true;
 	}
 
+	/**
+	 * Turns the ventilator off.
+	 * Ensures that the ventilator is turned off.
+	 */
 	protected void turnOff() {
 		this.on = false;
 	}
 
+	/**
+	 * @return true if the ventilator is on, false otherwise
+	 */
 	protected boolean isOn() {
 		return this.on;
 	}
 
+	/**
+	 * @return the id of the ventilator
+	 */
 	public int getId() {
 		return id;
 	}
 
+	/**
+	 * @return the purchase date of the ventilator
+	 */
 	public Date getPurchaseDate() {
 		return purchaseDate;
 	}

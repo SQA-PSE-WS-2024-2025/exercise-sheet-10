@@ -19,6 +19,17 @@ public class Stable {
 	private final List<Cage> cages;
 	private final Technician technician;
 
+	/**
+	 * Creates a new stable.
+	 * @param id the id of the stable
+	 * @param address the address of the stable
+	 * @param surface the surface of the stable
+	 * @param technician the technician who is responsible for the stable
+	 * @param temperature the temperature of the stable
+	 * @param capacity the capacity of the stable
+	 * @param cages the cages in the stable
+	 * @param ventilators the ventilators in the stable
+	 */
 	public Stable(
 			final int id,
 			final String address,
@@ -43,6 +54,11 @@ public class Stable {
 		this.ventilators = ventilators;
 	}
 
+	/**
+	 * Checks the temperature of the stable and turns on or off the ventilators accordingly.
+	 * Ensures that the ventilators are turned off if the temperature is above 40 degrees.
+	 * Ensures that the ventilators are turned on if the temperature is below or equal to 40 degrees.
+	 */
 	public void checkTemperature() {
 		if (temperature > 40) {
 			turnOffAllVentilators();
@@ -51,12 +67,20 @@ public class Stable {
 		}
 	}
 
+	/**
+	 * Turns on all ventilators in the stable.
+	 * Ensures that all ventilators are turned on.
+	 */
 	private void turnOnAllVentilators() {
 		for (final Ventilator aVentilator : ventilators) {
 			aVentilator.turnOn();
 		}
 	}
 
+	/**
+	 * Turns off all ventilators in the stable.
+	 * Ensures that all ventilators are turned off.
+	 */
 	private void turnOffAllVentilators() {
 		for (final Ventilator aVentilator : ventilators) {
 			aVentilator.turnOff();
