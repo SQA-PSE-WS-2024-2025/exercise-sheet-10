@@ -23,7 +23,7 @@ public class Veterinary {
 	 * @param firstName the first name of the veterinary
 	 * @param lastName the last name of the veterinary
 	 * @param phone the phone number of the veterinary
-	 * @param poultires the poultries the veterinary is responsible for
+	 * @param poultires the poultries the veterinary is responsible for, must not be greater than 200
 	 */
 	public Veterinary(
 			final int id,
@@ -45,7 +45,7 @@ public class Veterinary {
 	}
 
 	/**
-	 * Cares for all poultries who he is responsible for.
+	 * Cares for all poultries who the veterinary is responsible for.
 	 */
 	public void careForAllPoultries() {
 		// TODO

@@ -27,7 +27,7 @@ public class Stable {
 	 * @param technician the technician who is responsible for the stable
 	 * @param temperature the temperature of the stable
 	 * @param capacity the capacity of the stable
-	 * @param cages the cages in the stable
+	 * @param cages the cages in the stable, must not be less than 10
 	 * @param ventilators the ventilators in the stable
 	 */
 	public Stable(

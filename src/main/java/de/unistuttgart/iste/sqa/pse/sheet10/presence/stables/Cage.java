@@ -23,7 +23,7 @@ public class Cage<T extends LayingPoultry> {
 	 * @param width the width of the cage
 	 * @param capacity the capacity
 	 * @param isFull true if this cage is full, false otherwise
-	 * @param poultries a set containing the poultries which are in this cage
+	 * @param poultries a set containing the poultries which are in this cage, must not be greater than 200
 	 */
 	public Cage(
 			final int id,
