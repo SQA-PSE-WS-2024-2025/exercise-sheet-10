@@ -18,35 +18,31 @@ public final class Company {
 
 	private final StorageRack itemStorageRack;
 	private final Buffer orderBuffer;
-	// TODO: Add data structure for exercise 1i here.
+	// TODO: Add data structure for exercise part (i) here.
 
 	// TODO add documentation here.
 	public Company() {
 		orderBuffer = new Buffer();
-		// TODO: implement exercises 1e and 1i here.
+		// TODO: implement exercises part (e) and (i) here.
 		itemStorageRack = null; // TODO delete this line if necessary
 	}
 
 	// TODO add documentation here.
 	public void storeInStorageRack(final StationeryItem stationeryItem) {
-		// TODO: implement exercise 1e here.
+		// TODO: implement exercise part (e) here.
 	}
 
 	// TODO add documentation here.
 	public void processIncomingOrder(final Identifier identifier, final Customer customer) {
-		// TODO implement exercises 1h and 1i here.
+		// TODO implement exercises part (h) and (i) here.
 	}
 
-	/*@
-	@ ensures \result != null;
-	@ ensures \result.getIdentification().getType() == ItemType.PRESENT;
-	@*/
 	/**
 	 * Generates a bonus item for marketing reasons.
 	 *
-	 * @return A marketing bonus item.
+	 * @return A non-null marketing bonus item.
 	 */
-	private /*@ pure @*/ StationeryItem getBonusItem() {
+	private StationeryItem getBonusItem() {
 
 		switch ((new Random().nextInt(3))) {
 			case 1:
@@ -59,9 +55,9 @@ public final class Company {
 	}
 
 	/**
-	 * If items are waiting for packaging, takes the next available item from the buffer and return it.
+	 * If items are waiting for packaging, takes the next available item from the buffer and returns it.
 	 *
-	 * @return Optional next available item for packaging, or an empty Optional if there is none.
+	 * @return The next available item for packaging, or an empty Optional if there is none.
 	 */
 	public Optional<StationeryItem> takeItemForPackaging() {
 		if (orderBuffer.isEmpty()) {

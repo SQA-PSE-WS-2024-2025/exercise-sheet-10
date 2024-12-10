@@ -6,20 +6,19 @@ import de.unistuttgart.iste.sqa.pse.sheet10.homework.warehouse.Identifier;
  * Represents an individual stationary item in the warehouse system.
  */
 public abstract class StationeryItem {
-	// @ private instance invariant identification != null;
+	// classinvariant: identification != null;
 
 	private final Identifier identifier;
 	private final String descriptor;
 
-	/*@
-	@ requires identification != null && type != null
-	@ ensures this.identification == identification
-	@ ensures this.type == type
-	@*/
+
 	/**
 	 * Creates a new item with the given identification.
-	 * @param identifier Identification of the item.
-	 * @throws IllegalArgumentException If the preconditions are not satisfied.
+	 * 
+	 * @param identifier Identification of the item. Must not be null.
+	 * @param descriptor Descriptor of the item. Must not be null.
+	 * 
+	 * @throws IllegalArgumentException if any of identifier or descriptor is null.
 	 */
 	public StationeryItem(final Identifier identifier, final String descriptor) {
 		if (identifier == null || descriptor == null) {
@@ -30,6 +29,8 @@ public abstract class StationeryItem {
 	}
 
 	/**
+	 * Get the identification object of this item.
+	 * 
 	 * @return The identification object of this item.
 	 */
 	public Identifier getIdentifier() {
