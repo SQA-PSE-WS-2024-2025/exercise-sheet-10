@@ -17,6 +17,14 @@ public class Veterinary {
 
 	private final List<LayingPoultry> poultires;
 
+	/**
+	 * Creates a new veterinary.
+	 * @param id the id of the veterinary
+	 * @param firstName the first name of the veterinary
+	 * @param lastName the last name of the veterinary
+	 * @param phone the phone number of the veterinary
+	 * @param poultires the poultries the veterinary is responsible for, must not be greater than 200
+	 */
 	public Veterinary(
 			final int id,
 			final String firstName,
@@ -36,18 +44,31 @@ public class Veterinary {
 		this.poultires = poultires;
 	}
 
+	/**
+	 * Cares for all poultries who the veterinary is responsible for.
+	 */
 	public void careForAllPoultries() {
 		// TODO
 	}
 
+	/**
+	 * Cares for a specific ill poultry.
+	 * @param illPoultry the ill poultry
+	 */
 	private void careFor(final LayingPoultry illPoultry) {
 		// TODO
 	}
 
+	/**
+	 * @return the last name of the veterinary
+	 */
 	public String getLastName() {
 		return lastName;
 	}
 
+	/**
+	 * @return the phone number of the veterinary
+	 */
 	public String getPhone() {
 		return phone;
 	}

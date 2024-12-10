@@ -16,6 +16,15 @@ public class Cage<T extends LayingPoultry> {
 
 	private final Set<LayingPoultry> poultries;
 
+	/**
+	 * Creates a cage
+	 * @param id the id of the cage
+	 * @param height the height of the cage
+	 * @param width the width of the cage
+	 * @param capacity the capacity
+	 * @param isFull true if this cage is full, false otherwise
+	 * @param poultries a set containing the poultries which are in this cage, must not be greater than 200
+	 */
 	public Cage(
 			final int id,
 			final int height,
@@ -35,14 +44,23 @@ public class Cage<T extends LayingPoultry> {
 		this.poultries = poultries;
 	}
 
+	/**
+	 * @return the id of this cage
+	 */
 	public int getId() {
 		return id;
 	}
 
+	/**
+	 * @return true if this cage is full, false otherwise
+	 */
 	public boolean isFull() {
 		return isFull;
 	}
 
+	/**
+	 * @return a set of the poultries in this cage
+	 */
 	private Set<LayingPoultry> getPoultries() {
 		return poultries;
 	}

@@ -15,6 +15,14 @@ public class LayingPoultry {
 
 	private final Optional<Veterinary> veterinary;
 
+	/**
+	 * Creates a new laying poultry.
+	 * @param id the id of the laying poultry
+	 * @param type the type of the laying poultry
+	 * @param age the age of the laying poultry
+	 * @param weight the weight of the laying poultry
+	 * @param veterinary an optional veterinary which cares for the laying poultry
+	 */
 	public LayingPoultry(
 			final int id,
 			final String type,
@@ -29,6 +37,9 @@ public class LayingPoultry {
 		this.veterinary = veterinary;
 	}
 
+	/**
+	 * @return the weight of the laying poultry
+	 */
 	public double getWeight() {
 		return weight;
 	}
