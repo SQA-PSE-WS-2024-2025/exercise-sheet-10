@@ -45,21 +45,6 @@ public class Veterinary {
 	}
 
 	/**
-	 * Cares for all poultries who the veterinary is responsible for.
-	 */
-	public void careForAllPoultries() {
-		// TODO
-	}
-
-	/**
-	 * Cares for a specific ill poultry.
-	 * @param illPoultry the ill poultry
-	 */
-	private void careFor(final LayingPoultry illPoultry) {
-		// TODO
-	}
-
-	/**
 	 * @return the last name of the veterinary
 	 */
 	public String getLastName() {
