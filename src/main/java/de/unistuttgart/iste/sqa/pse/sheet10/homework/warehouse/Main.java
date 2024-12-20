@@ -8,7 +8,7 @@ import java.util.Optional;
 /**
  * A Simple class with a main method to experiment with the warehouse system.
  *
- * This Class will not be graded. Fell free to experiment at you leisure. The
+ * This Class will not be graded. Fell free to experiment at your leisure. The
  * {@code main} operation already contains some code. You can use it as a
  * starting point.
  *
