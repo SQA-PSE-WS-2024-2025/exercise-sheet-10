@@ -41,6 +41,12 @@
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet10.homework.warehouse.Main</mainClass>
 						</configuration>
 					</execution>
+					<execution>
+						<id>JustSomeHamsterGameApp</id>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet10.homework.oop.JustSomeHamsterGameApp</mainClass>
+						</configuration>
+					</execution>
 				</executions>
 			</plugin>
 			<plugin>
