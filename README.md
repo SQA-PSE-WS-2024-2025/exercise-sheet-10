@@ -34,8 +34,4 @@ Homework excercise 1 will output to the console.
   ```sh
   mvn clean compile exec:java@Main
   ```
-  
-  ```sh
-  mvn clean compile exec:java@WeAreAllPauleHereHamsterGameApp
-  ```
 

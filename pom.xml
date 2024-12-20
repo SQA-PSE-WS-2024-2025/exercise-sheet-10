@@ -36,12 +36,6 @@
 				<version>3.4.1</version>
 				<executions>
 					<execution>
-						<id>WeAreAllPauleHereHamsterGameApp</id>
-						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet10.presence.scopes.WeAreAllPauleHereHamsterGameApp</mainClass>
-						</configuration>
-					</execution>
-					<execution>
 						<id>Main</id>
 						<configuration>
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet10.homework.warehouse.Main</mainClass>
